@@ -1,0 +1,29 @@
+Source: pars-branding
+Section: metapackages
+Priority: optional
+Maintainer: Pars Linux Developers <dev@parslinux.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.1
+Homepage: https://github.com/parslinux/pars-branding
+
+Package: pars-branding
+Architecture: all
+Depends: ${misc:Depends},
+         parslinux-gnome-settings | pardus-gnome-settings,
+         parslinux-grub-theme | pardus-bilge-grub-theme,
+         desktop-base
+Recommends: adw-gtk3-theme,
+            fonts-ubuntu,
+            fastfetch,
+            parslinux-about,
+            plymouth,
+            plymouth-themes
+Breaks: pardus-backgrounds
+Replaces: pardus-backgrounds
+Description: ParsLinux Brand Identity, Wallpapers and Theme Metapackage
+ This package provides the official visual identity for ParsLinux:
+  * ParsLinux official wallpapers and GNOME background settings
+  * Vector SVG brand logos and application icons
+  * Fastfetch ASCII artwork and terminal system configuration
+  * Distribution release identity (os-release and issue)
+  * System branding dependencies (GTK themes, icons, grub theme)

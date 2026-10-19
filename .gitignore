@@ -1,0 +1,12 @@
+build/
+*.deb
+*.tar.gz
+*.tar.xz
+*.tar.zst
+.debhelper/
+debian/.debhelper/
+debian/pars-branding/
+debian/pars-branding.*
+debian/files
+debian/*.substvars
+*~

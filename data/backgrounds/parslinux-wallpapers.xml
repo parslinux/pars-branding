@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>ParsLinux Varsayılan</name>
+    <filename>/usr/share/backgrounds/parslinux/pars-default.png</filename>
+    <options>zoom</options>
+    <pcolor>#0b0f19</pcolor>
+    <scolor>#1a2332</scolor>
+  </wallpaper>
+</wallpapers>

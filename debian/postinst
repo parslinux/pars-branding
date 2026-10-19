@@ -1,0 +1,27 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    configure)
+        # GNOME / GTK İkon önbelleğini güncelle
+        if which gtk-update-icon-cache >/dev/null 2>&1; then
+            gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor || true
+        fi
+
+        # Masaüstü Arka Planı için update-alternatives (eğer desktop-base kuruluysa)
+        if which update-alternatives >/dev/null 2>&1; then
+            update-alternatives --install /usr/share/images/desktop-base/desktop-background \
+                desktop-background /usr/share/backgrounds/parslinux/pars-default.png 90 || true
+        fi
+
+        # Fastfetch varsayılan konfigürasyonu
+        if [ ! -f /etc/fastfetch/config.jsonc ] && [ -f /etc/fastfetch/parslinux.jsonc ]; then
+            mkdir -p /etc/fastfetch
+            cp -n /etc/fastfetch/parslinux.jsonc /etc/fastfetch/config.jsonc || true
+        fi
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

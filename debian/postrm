@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove|purge)
+        if which update-alternatives >/dev/null 2>&1; then
+            update-alternatives --remove desktop-background /usr/share/backgrounds/parslinux/pars-default.png || true
+        fi
+        if which gtk-update-icon-cache >/dev/null 2>&1; then
+            gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor || true
+        fi
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

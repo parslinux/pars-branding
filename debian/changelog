@@ -1,0 +1,10 @@
+pars-branding (1.0.0) anatolian; urgency=medium
+
+  * Initial release of ParsLinux branding and visual identity metapackage.
+  * Added ParsLinux official 1080p wallpaper and GNOME background properties.
+  * Added ParsLinux vector logo and scalable symbolic application icons.
+  * Added custom Fastfetch ASCII art and configuration.
+  * Added /etc/issue and distro release definitions.
+  * Added dependencies on parslinux-gnome-settings and parslinux-grub-theme.
+
+ -- Pars Linux Developers <dev@parslinux.org>  Mon, 19 Oct 2026 21:00:00 +0300
