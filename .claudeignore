@@ -1,0 +1,30 @@
+# Git
+.git/
+.gitignore
+
+# Paketleme ve Derleme Çıktıları
+build/
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.upload
+*.tar.gz
+*.tar.xz
+*.tar.zst
+
+# Debian Paketleme Geçici Dosyaları
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/pars-branding/
+debian/*.substvars
+debian/*.debhelper.log
+
+# Sistem & IDE Dosyaları
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db

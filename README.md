@@ -13,7 +13,7 @@ ParsLinux işletim sisteminin kurumsal görsel kimliğini, duvar kağıtlarını
 | **Logolar & İkonlar** | `/usr/share/pixmaps/parslinux/` | ParsLinux resmi vektör SVG logoları |
 | **Uygulama İkonu** | `/usr/share/icons/hicolor/scalable/apps/` | `parslinux-logo.svg` sistem ikonu |
 | **Fastfetch Yapılandırması** | `/etc/fastfetch/parslinux.jsonc` | Terminal sistem bilgisi için özel Pars teması |
-| **Terminal ASCII Sanatı** | `/usr/share/parslinux/ascii/` | ParsLinux ASCII terminal logosu |
+| **Terminal ASCII Sanatı** | `/usr/share/parslinux/ascii/` | ParsLinux özel **'P'** harfi ASCII terminal logosu |
 | **Dağıtım Kimliği** | `/usr/share/parslinux/distro/` | `os-release`, `issue` ve `issue.net` tanımları |
 
 ---
@@ -31,7 +31,7 @@ Bu paket kurulduğunda sistemin ParsLinux görsel kimliğini eksiksiz yansıtmas
 
 ## 🚀 Hızlı Başlangıç & Kullanım
 
-### 1. Önizleme ve Doğrulama
+### 1. Canlı Önizleme ve Doğrulama
 Varlıkları ve terminal ASCII sanatını yerel olarak test etmek için:
 ```bash
 ./run.sh
@@ -54,6 +54,14 @@ sudo ./install.sh
 ```bash
 sudo ./uninstall.sh
 ```
+
+---
+
+## 📚 Dokümantasyon
+
+- [x] [install.md](install.md) — Ayrıntılı kurulum, derleme ve live-build entegrasyon rehberi.
+- [x] [progress.md](progress.md) — Geliştirme adımları ve ilerleme kontrol listesi.
+- [x] [CLAUDE.md](CLAUDE.md) — Proje mimarisi ve yapay zeka asistan kılavuzu.
 
 ---
 
