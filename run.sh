@@ -35,7 +35,7 @@ echo -e "  • Dağıtım Kimliği (Issue) : $(cat data/issue/issue)"
 echo -e "\n${BOLD}[3/3] Fastfetch Testi:${NC}"
 if command -v fastfetch &>/dev/null; then
     echo -e "${GREEN}✓ fastfetch tespit edildi, ParsLinux önayarı çalıştırılıyor...${NC}\n"
-    fastfetch -c "$SCRIPT_DIR/data/fastfetch/config.jsonc"
+    fastfetch -c "$SCRIPT_DIR/data/fastfetch/config.jsonc" --logo "$SCRIPT_DIR/data/fastfetch/parslinux-ascii.txt"
 else
     echo -e "${YELLOW}ℹ️  fastfetch kurulu değil (Kurulu olduğunda otomatik Pars temasıyla çalışacaktır).${NC}"
 fi
